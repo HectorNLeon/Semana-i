@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+  </head>
+  <body>
+    <div id="console"></div>
+    <!-- Add an image that we will use to test -->
+    <video autoplay playsinline muted id="webcam" width="900" height="400"></video>
+    <!-- Load index.js after the content of the page -->
+    <button id="class-a">Coca</button>
+    <button id="class-b">Cafe</button>
+    <button id="class-c">Coca light</button>
+    <button id="class-d">Sabritas</button>
+    <button id="class-e">Emperador</button>
+    <div id='counter'></div>
+    <button id='save' >Save Model</button>
+    <script src="index.js"></script>
+  </body>
+</html>
